@@ -948,6 +948,25 @@ importers:
         specifier: ^13.0.3
         version: 13.0.3
 
+  apps/main-node-bwrap:
+    dependencies:
+      '@open-managed-agents/main-node':
+        specifier: workspace:*
+        version: link:../main-node
+      '@open-managed-agents/sandbox-adapter-bwrap':
+        specifier: workspace:*
+        version: link:../../packages/sandbox-adapter-bwrap
+    devDependencies:
+      '@cloudflare/workers-types':
+        specifier: ^5.20260929.1
+        version: 5.20260929.1
+      '@types/node':
+        specifier: ^26.6.6
+        version: 26.6.6
+      tsx:
+        specifier: ^4.19.0
+        version: 4.21.0
+
   apps/main-vercel:
     dependencies:
       '@anthropic-ai/sdk':
@@ -3814,6 +3833,22 @@ importers:
         version: 5.0.5(@opentelemetry/api@1.9.0)(@types/node@26.6.6)(@vitest/coverage-v8@5.0.5)(jsdom@29.1.1(@noble/hashes@2.2.0))(msw@2.14.6(@types/node@26.6.6)(typescript@7.0.2))(vite@7.3.6(@types/node@26.6.6)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.21.0)(yaml@2.9.1))
 
   packages/sandbox-adapter-boxrun:
+    dependencies:
+      '@open-managed-agents/observability':
+        specifier: workspace:*
+        version: link:../observability
+      '@open-managed-agents/sandbox':
+        specifier: workspace:*
+        version: link:../sandbox
+    devDependencies:
+      '@types/node':
+        specifier: ^26.6.6
+        version: 26.6.6
+      vitest:
+        specifier: ^5.0.5
+        version: 5.0.5(@opentelemetry/api@1.9.0)(@types/node@26.6.6)(@vitest/coverage-v8@5.0.5)(jsdom@29.1.1(@noble/hashes@2.2.0))(msw@2.14.6(@types/node@26.6.6)(typescript@7.0.2))(vite@7.3.6(@types/node@26.6.6)(jiti@2.6.1)(lightningcss@1.32.0)(tsx@4.21.0)(yaml@2.9.1))
+
+  packages/sandbox-adapter-bwrap:
     dependencies:
       '@open-managed-agents/observability':
         specifier: workspace:*

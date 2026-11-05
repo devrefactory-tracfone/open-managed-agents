@@ -3,6 +3,7 @@ packages:
   - 'apps/main'
   - 'apps/main-node'
   - 'apps/main-fly'
+  - 'apps/main-node-bwrap'
   - 'apps/main-vercel'
   - 'apps/matter'
   - 'apps/agent'
