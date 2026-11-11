@@ -1,0 +1,20 @@
+{
+  "name": "@open-managed-agents/main-node-bwrap",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Node self-host entrypoint with the bubblewrap sandbox adapter",
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@open-managed-agents/main-node": "workspace:*",
+    "@open-managed-agents/sandbox-adapter-bwrap": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "tsx": "^4.19.0",
+    "@cloudflare/workers-types": "^5.20260929.1"
+  }
+}
